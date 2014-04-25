@@ -1,0 +1,6 @@
+h1 Items
+.items
+	.item(ng-repeat="item in items")
+		h3.name {{ item.name }}
+		p.price {{ item.price | currency }}
+a.btn(href='/#/items/new') New Item

@@ -1,0 +1,4 @@
+h1 Transactions
+.transactions
+	.transaction(ng-repeat="sale in sales | reverse")
+		p {{ sale.managerName + ' sold ' + sale.quantity + ' ' + sale.itemName + '(s) for ' + (sale.price | currency) }}

@@ -1,0 +1,5 @@
+h1 Create New Item
+form(ng-submit="itemSubmit()")
+	input(type="text", ng-model='name', placeholder="Item Name")
+	input(type="text", ng-model='price', placeholder="Item Price (ex: 15.00)")
+	input.btn(type="submit", value="Submit")
