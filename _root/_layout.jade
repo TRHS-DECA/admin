@@ -13,7 +13,7 @@ html
 		script(src='/controllers/stat_ctrl.js')
 		script(src="/main.js")
 		link(rel="stylesheet", type="text/css", href="/main.css")
-	body(ng-app="adminApp")
+	body(ng-app="adminApp", onload="window.location.hash = '#/'")
 		// header	
 			h1 The Ridge - Admin Dashboard
 		!= yield
